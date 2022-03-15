@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="top-container" id="top-container">
+            <label for="difficulty"><h2>Difficulty :</h2></label>
+            <form action="" id="setting-form">
+                <select name="" id="select" class="form-select">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+            </form>
+        </div>
+        <div class="container" id="container">
+            <h2 class="container-title">Speed Typer</h2>
+            <div class="counter">
+                <p class="time">Time left:<span id="time">10s</span>
+                </p>
+                <p class="score">Score:<span id="score">0</span>
+                </p>
+            </div>  
+            <p>Type the following:</p>
+            <h1><span class="word" id="word"></span></h1>
+            <input
+            class="input"
+             type="text"
+             name="text"
+             id="input"
+             placeholder="Type the word here..."
+             autocomplete="off">
+             <h4   class="name"><span id="name"</span></h4>
+        </div>
+
+     
+    </main>
+
+    <div class="modal hidden">
+        <div class="modal-header">
+            Time is over
+        </div>
+        <div class="modal-body">
+            <p>
+                Your score is 
+                <span id="showScore">00</span>
+            </p>
+            <button ondblclick="location.reload()">Reload</button>
+        </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script/app.js"></script>
+    <script src="script/typed.js"></script>
+</body>
+</html>

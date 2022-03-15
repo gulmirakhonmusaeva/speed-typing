@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@100;200;300;400;500;600;800;900&display=swap');
+    
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+   
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100%;
+    color: antiquewhite;
+    font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+
+
+}
+h1,h2,h3,h4,h5 {
+    margin: 0;
+} 
+.main {
+    width: 50%;
+    height: 60vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    box-shadow: 0px 5px 25px rgba(0,0, 0, .5);
+    z-index: 100;
+ }
+
+.show {
+    transition: 0.5s linear ease;
+
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.form-select {
+    width: 200px;
+    outline: none;
+    font-size: 20px;
+    border-radius:3px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.container-title {
+    font-size:45px;
+}
+.counter {
+    display: flex;
+    padding-bottom: 20px;
+} 
+
+.form-select {
+    padding: 5px;
+    /* border:3px solid rgb(61, 41, 41); */
+    box-shadow:3px 3px 5px 3px rgba(0,0, 0, .5);
+    background-color: crimson;   
+}
+
+.counter span {
+    font-size: 28px;
+}
+.time {
+    margin-right : 70px;
+}
+
+.word {
+    font-family: 'Lancelot', display;
+    color:#fff;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    user-select: none;
+}
+
+.input {  
+    padding: 12px;
+    margin-top: 30px;
+    border: 3px solid rgb(165, 0, 0);
+    border-radius: 5px;
+    box-shadow:3px 3px 5px 3px rgba(0,0, 0, .5);
+    outline: none;
+    background-color: rgb(23, 21, 141);
+    color:#fff;
+    font-family: 'Lancelot', display;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.name {
+    padding-top: 20px;
+}
+.modal {
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 400px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background: url('img/pile-of-keys.png') no-repeat;
+    background-size:contain;
+    background-position: bottom center;
+    z-index: 100;
+}
+
+p{ 
+    margin: 0;
+}
+
+.modal button {
+    padding: 12px 18px;
+    font-size: 18px;
+    border: 5px solid rgb(212, 10, 10);
+    border-radius: 5px;
+    background-color: rgb(34, 31, 241);
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.modal button:hover {
+    border:4px solid rgb(42, 39, 201);
+    background-color: rgb(175, 16, 16);
+}
+.hidden {
+    display: none;
+}
+.modal-header {
+    padding: 15px;
+    font-size: 20px;
+    color:rgb(255, 57, 57);
+    font-weight: bold;
+}
+.modal-body {
+    padding: 0 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color:rgb(72, 203, 247);
+    font-family: 'Schoolbell', handwriting;
+
+}
+.modal-body span {
+    font-size: 55px;
+    letter-spacing: 2px;
+    display: block;
+    color:rgb(252, 96, 6);
+}
+
+.overlay {
+    background-color: rgba(0,0,0, .7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+
+}
